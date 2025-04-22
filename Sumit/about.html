@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <script src="https://kit.fontawesome.com/cbb572b377.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class=".bo">
+    <div id="header1">
+        <div class="container1">
+            <nav>
+                <img src="images/logo.png" class="logo1">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Patents.html">Patents</a></li>
+                    <li><a href="Project.html">Projects</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <!-- <h1 class="h">About Me</h1> -->
+
+    <div class="box-container2">
+        <div class="translucent-box2">
+            <div class="sub-title" style="text-align: center;">About Me</div>
+            <div class="red-line"></div>
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="images/img2.jpeg" alt="About Me">
+                        </div>
+                        <div class="about-col-2">
+                            <!-- <h1 class="sub-title">About Me</h1> -->
+                            <p>Hi, I’m Sumit Pathak, currently pursuing a B.Tech in Artificial Intelligence and Machine
+                                Learning
+                                at Chandigarh Engineering College. I’m a tech enthusiast who’s always been fascinated by
+                                the way
+                                AI and computer vision can transform everyday life—especially in fields like healthcare
+                                and
+                                immersive technologies.
+                                <br> <br>
+                                I believe in using technology to solve real-world problems.
+                                One of my most exciting projects is the BioVision Sensor,
+                                which integrates ECG, PPG, and skin temperature tracking
+                                into VR headsets—bringing health monitoring into immersive experiences.
+                                I’ve also developed an OCR and Translation Application that uses Tesseract OCR,
+                                Google Translate, and text-to-speech to help users easily extract, translate,
+                                and read text from images and PDFs.
+                                <br> <br>
+                                Beyond development, I’ve stepped into leadership roles as well.
+                                I had the opportunity to manage the Advanced Digital Training & Career Leadership
+                                Mentorship
+                                Program,
+                                supported by ACIC RISE and NITI Aayog.
+                                It gave me a chance to blend my coordination skills with my passion for tech education.
+                                <br> <br>
+                                My internship at IBM SkillsBuild, in collaboration with AICTE,
+                                helped me strengthen my front-end development skills using HTML, CSS,
+                                and JavaScript—complementing my backend and Python expertise.
+                                <br> <br>
+                                With a strong grasp of Python, Django, MySQL, and web technologies,
+                                I’m constantly learning and exploring. I’ve earned certifications from AWS,
+                                IBM, Microsoft, and more. I also enjoy participating in hackathons and tech events,
+                                recently securing 2nd place in a technical riddle competition.
+                                <br> <br>
+                                Whether I’m coding, coordinating, or collaborating—I’m
+                                always focused on building something meaningful.
+                            </p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Front End Development</span><br>Designing Webpage interface</li>
+                                    <li><span>Artificial Intelligence and Machine Learning</span><br>Basic Machine
+                                        Learning
+                                        Concepts</li>
+                                    <li><span>Soft Skills</span><br>Leadership, Project Coordination, Communication,
+                                        Analytical
+                                        Thinking</li>
+
+                                    <!-- <li><span>Front End Development</span><br>Designing Webpage interface</li> -->
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>Front-End Intern IBM SkillsBuild | Jun–Jul 2024</span>
+                                        <br>Worked on responsive web design using HTML, CSS, JS, and Tailwind.
+                                    </li>
+                                    <li><span>Operations Manager Makes360 x ACIC RISE | Sept–Oct 2024</span>
+                                        <br>Virtual internship at Edunut Foundation
+                                    </li>
+                                    <li><span>Lead Coordinator – Eminence CEC | Mar 2025</span>
+                                        <br>Led coordination for the college’s flagship event.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>B.Tech – Artificial Intelligence & Machine Learning | 2023 –
+                                            2027</span><br>Chandigarh Engineering College Landran, Mohali</li>
+                                    <li><span>Senior Secondary (Class 12), CBSE | 2021 – 2022</span><br>Mukularanyam
+                                        English
+                                        School, Varanasi</li>
+                                    <li><span>Higher Secondary (Class 10), CBSE | 2019 – 2020</span><br>Mukularanyam
+                                        English
+                                        School, Varanasi</li>
+                                    <!-- <li><span>Front End Development</span><br>Designing Webpage interface</li>
+                                    <li><span>Front End Development</span><br>Designing Webpage interface</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Sumit Pathak.</p>
+    </div>
+
+</body>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwEX08ChsG1kmW-U0TAIT4vwpQa69RQwJNJZBwbQWl298zFvznUeKicUroD01Gzctfr/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function () {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</html>

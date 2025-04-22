@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patents</title>
+    <script src="https://kit.fontawesome.com/cbb572b377.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class=".bo">
+    <div id="header1">
+        <div class="container1">
+            <nav>
+                <img src="images/logo.png" class="logo1">
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Patents.html">Patents</a></li>
+                    <li><a href="Project.html">Projects</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ---------- patent 1 ---------- -->
+
+    <h1 class="h">My Parents</h1>
+
+    <div class="box-container">
+
+        <!-- Patent 1 -->
+        <div class="translucent-box">
+            <div class="title">USB SECURITY SYSTEM WITH INTEGRATED﻿ MULTI-NODE VERIFICATION</div>
+            <div class="red-line"></div>
+            <div class="application-number">Application Number: 202511015897</div>
+            <div class="description1">
+                <strong>USB Bus Tracking System – Patent</strong><br><br>
+                Managing USB device communication is essential for security and performance in modern computing. Our USB
+                Bus Tracking System introduces an innovative approach to monitoring, securing, and optimizing USB
+                interactions within computer systems.
+                <br><br>
+                🔹 <strong>Key Features:</strong>
+                <ul>
+                    <li>✔ Real-Time USB Activity Tracking – Monitors and logs all USB bus transactions for enhanced
+                        visibility.</li>
+                    <li>✔ Device Authentication & Classification – Uses machine learning to distinguish between trusted
+                        and unknown USB devices.</li>
+                    <li>✔ Intrusion Detection & Security Alerts – Identifies and prevents unauthorized access or
+                        malicious USB activity.</li>
+                    <li>✔ Cryptographic Security Measures – Integrates ECDSA encryption and SHA-256 hashing for secure
+                        USB communications.</li>
+                    <li>✔ Decentralized Verification System – Prevents single points of failure by distributing
+                        authentication across multiple nodes.</li>
+                </ul>
+                <br>
+                🔐 <strong>Why It Matters?</strong><br>
+                As cyber threats evolve, USB ports remain a common attack vector for malware injection, unauthorized
+                access, and data theft. Our patented system redefines USB security, ensuring controlled, encrypted, and
+                intelligent USB device interactions.
+                <br><br>
+                This breakthrough technology enhances endpoint security, making USB communication more secure and
+                efficient for enterprises, government agencies, and personal computing.
+            </div>
+            <div class="inventors">
+                <strong>Inventors:</strong> Sumit Pathak, Aryan Raj, Jayant Jindal, Devanshu Kumar
+            </div>
+        </div>
+
+        <!-- Patent 2 -->
+        <!-- <div class="translucent-box">
+          <div class="title">VISIONVEDA – A SMART HEALTH-INTEGRATED VR HEADSET</div>
+          <div class="red-line"></div>
+          <div class="application-number">Application Number: 202511015898</div>
+          <div class="description">
+            <strong>Vision Veda – Patent</strong><br><br>
+            Vision Veda is a revolutionary system that leverages artificial intelligence and cognitive vision to streamline tasks and enhance decision-making in diverse environments.
+            <br><br>
+            🔹 <strong>Key Features:</strong>
+            <ul>
+              <li>✔ Deep Learning-Based Vision Engine</li>
+              <li>✔ Real-Time Object Detection and Analysis</li>
+              <li>✔ Seamless API Integration</li>
+              <li>✔ Customizable Workflows for Industries</li>
+              <li>✔ Optimized for Edge Devices</li>
+            </ul>
+            <br>
+            🔐 <strong>Why It Matters?</strong><br>
+            By combining vision-based AI with knowledge systems, Vision Veda empowers users with insights never before possible in real-time.
+            <br><br>
+            This innovation has applications in manufacturing, healthcare, retail, and education, redefining how we interact with intelligent visual systems.
+          </div>
+          <div class="inventors">
+            <strong>Inventor:</strong> Sumit Pathak
+          </div>
+        </div> -->
+
+
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Sumit Pathak.</p>
+    </div>
+
+
+
+
+</body>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+</html>
